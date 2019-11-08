@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="roundslider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="roundslider.min.js"></script>
+    <title> Fast Forward English </title>
+  </head>
+
+  <body>
+
+    <div id='cssmenu'>
+      <ul>
+         <li><a href='index.html'><img src="images_jeu/logo.png" style="width:95%; margin-right: -350px;"></a></li>
+         <li><a class="onglet" href='fenetre3bis.html'>Test</a></li>
+         <li><a class="onglet" href='fenetre5bis.html'>Playlist</a></li>
+         <li><a class="onglet" href='fenetre6bis.html'>About us</a></li>
+      </ul>
+    </div>
+
+    <div id="wrapper" show=true>
+
+      <main class="fenetre">
+        <div id="content">
+          <div class="innertube">
+              <div style="width: 75%; float:left" align="left">
+                <h2> <img src="images_jeu/ff.png" style="width="22" height="22""> Select up to 3 topics !</h2>
+              </div>
+              <div style="width: 25%; float:left; margin-top:10px;" align="middle" >
+                <button class="button" type="button" onclick="chooseDuration()"><span>Next </span></button>
+              </div>
+              <br>
+              <center>
+                <br><br>
+                <p>
+                  &nbsp
+                  <img class="imgtheme" id="theme1" value=false src="images_jeu/theme/Sports.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme2" value=false src="images_jeu/theme/Society.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme3" value=false src="images_jeu/theme/Ecology.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  &nbsp
+                </p>
+                <p>
+                  &nbsp
+                  <img class="imgtheme" id="theme4" value=false src="images_jeu/theme/Comedy.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme5" value=false src="images_jeu/theme/Music.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme6" value=false src="images_jeu/theme/Guns.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  &nbsp
+                </p>
+                <p>
+                  &nbsp
+                  <img class="imgtheme" id="theme7" value=false src="images_jeu/theme/Religion.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme8" value=false src="images_jeu/theme/Science.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  <img class="imgtheme" id="theme9" value=false src="images_jeu/theme/Gender.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="128" height="128" align="middle" onclick="chooseTheme(this)">
+                  &nbsp
+                </p>
+              </center>
+              <br>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="theme.js"></script>
+
+</html>

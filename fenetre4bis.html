@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="roundslider.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="roundslider.min.js"></script>
+    <title> Fast Forward English </title>
+  </head>
+
+  <body>
+
+    <div id='cssmenu'>
+      <ul>
+         <li><a href='index.html'><img src="images_jeu/logo.png" style="width:95%; margin-right: -350px;"></a></li>
+         <li><a class="onglet" href='fenetre3bis.html'>Test</a></li>
+         <li><a class="onglet" href='fenetre5bis.html'>Playlist</a></li>
+         <li><a class="onglet" href='fenetre6bis.html'>About us</a></li>
+      </ul>
+    </div>
+
+    <div id="wrapper" show=true>
+
+      <main class="fenetre">
+        <div id="content">
+          <div class="innertube">
+              <div style="width: 75%; float:left" align="left">
+                <h2> <img src="images_jeu/ff.png" style="width="22" height="22""> How much time do you have ?</h2>
+              </div>
+              <div style="width: 25%; float:left; margin-top:10px;" align="middle" >
+                <button class="button" type="button" onclick="launchTest()"><span>Next </span></button>
+              </div>
+              <center>
+                <p>
+                  <br><br><br>
+                  <img class="chrono" src="images_jeu/watch.png">
+                  <br><br>
+                  <div id="slider2" class="rslider" z-index:"1"></div>
+                </p>
+              </center>
+              <div style="width: 75%; float:left" align="left">
+                <h2> <img src="images_jeu/ff.png" style="width="22" height="22""> What do you want to work on ?</h2>
+              </div>
+              <center>
+                <div style="margin-bottom: 50px;">
+                  <div id="score1" style="width: 33%; float:left;" align="middle">
+                    <img class="imgtheme" id="competence1" value=false src="images_jeu/competences/comprehension.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="240" height="80" align="middle" onclick="chooseCompetence(this)">
+                  </div>
+                  <div id="score2" style="width: 33%; float:left;" align="middle">
+                    <img class="imgtheme" id="competence2" value=false src="images_jeu/competences/inference.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="240" height="80" align="middle" onclick="chooseCompetence(this)">
+                  </div>
+                  <div id="score3" style="width: 33%; float:left;" align="middle">
+                    <img class="imgtheme" id="competence3" value=false src="images_jeu/competences/vocab.png" style="border:0px darkgreen dashed" hspace="15"; vspace="7" width="240" height="80" align="middle" onclick="chooseCompetence(this)">
+                  </div>
+                </div>
+              </center>
+              <br>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="duration.js"></script>
+
+</html>

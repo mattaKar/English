@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> Fast Forward English </title>
+  <script src = "https://www.youtube.com/iframe_api"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="taffy.js"></script>
+  <script type="text/javascript" src="database.js"></script>
+</head>
+
+  <body>
+
+    <div id='cssmenu'>
+      <ul>
+         <li><a href='index.html'><img src="images_jeu/logo.png" style="width:95%; margin-right: -350px;"></a></li>
+         <li><a class="onglet" href='fenetre3bis.html'>Test</a></li>
+         <li><a class="onglet" href='fenetre5bis.html'>Playlist</a></li>
+         <li><a class="onglet" href='fenetre6bis.html'>About us</a></li>
+      </ul>
+    </div>
+
+    <div id="wrapper" show=true>
+
+      <main class="fenetre">
+        <div id="content">
+          <div class="innertube">
+            <div style="width: 75%; float:left" align="left">
+              <h2> <img src="images_jeu/ff.png" style="width="22" height="22""> Here are the video you saved !</h2>
+            </div>
+            <div style="width: 25%; float:left; margin-top:10px;" align="middle" >
+              <button class="button_delete" type="button" onclick="clearSavedVideo()"><span>&#x1F5D1; </span></button>
+            </div>
+            <center>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player1" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player2" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player3" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <br>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player4" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player5" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player6" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <br>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player7" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player8" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+              <div style="width: 33%; float:left" align="middle">
+                <div id="player9" style="width: 80%; height: 206px; margin-top: 17px;"></div>
+              </div>
+            </center>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="saved.js"></script>
+
+</html>

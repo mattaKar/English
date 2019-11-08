@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Fast Forward English </title>
+    <script src = "https://www.youtube.com/iframe_api"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="taffy.js"></script>
+    <script type="text/javascript" src="database.js"></script>
+  </head>
+
+  <body>
+
+    <div id='cssmenu'>
+      <ul>
+         <li><a href='index.html'><img src="images_jeu/logo.png" style="width:95%; margin-right: -350px;"></a></li>
+         <li><a class="onglet" href='fenetre3bis.html'>Test</a></li>
+         <li><a class="onglet" href='fenetre5bis.html'>Playlist</a></li>
+         <li><a class="onglet" href='fenetre6bis.html'>About us</a></li>
+      </ul>
+    </div>
+
+    <div id="wrapper" show=true>
+
+      <main class="fenetre">
+        <div id="content">
+          <div class="innertube">
+            <center>
+              <div style="width: 75%; float:left" align="middle">
+                <div class="progress">
+                  <span id="greenbar" class="green" style="width: 0%;"><span></span></span>
+                </div>
+              </div>
+              <div style="width: 12%; float:left" align="middle">
+                <button class="button_save" type="button" id="save" onclick="saveVideo()"><span id="saveButton">&#x2605;</span></button>
+              </div>
+              <div style="width: 12%; float:left" align="middle">
+                <button class="button" type="button" id="next" onclick="goToNextVideo()"><span id="textButton">Next </span></button>
+              </div>
+              <div class= "ytplayer" id="player" style="width: 41%; height: 289px; margin-top: 17px;"></div>
+              <div id="theme_div" style="display:none;">
+                <h1 id="theme" class="elegantshadow"> &nbsp; </h1>
+              </div>
+              <div class="innertube_answers" id="answers" style="display:none;">
+                <div class="space_question"><h2 id="text_question" style="display:inline;">&nbsp;</h2></div>
+                <section>
+                  <div>
+                    <input type="radio" id="control_01" name="select" value="1" onclick="analyseAnswer(this.value)">
+                    <label id="lab1" for="control_01">
+                      <h3 class="h3_letter">A</h3>
+                      <p class="answers" id="text_answer1" for="answer1">A) un frisbee comestible ?</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="control_02" name="select" value="2" onclick="analyseAnswer(this.value)">
+                    <label id="lab2" for="control_02">
+                      <h3 class="h3_letter">B</h3>
+                      <p class="answers" id="text_answer2" for="answer2">B) une kippa surgelée ?</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="control_03" name="select" value="3" onclick="analyseAnswer(this.value)">
+                    <label id="lab3" for="control_03">
+                      <h3 class="h3_letter">C</h3>
+                      <p class="answers" id="text_answer3" for="answer3">C) un pancake qui est tombé dans la neige avant le 31 décembre ?</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="control_04" name="select" value="4" onclick="analyseAnswer(this.value)">
+                    <label id="lab4" for="control_04">
+                      <h3 class="h3_letter">D</h3>
+                      <p class="answers" id="text_answer4" for="answer4">D) la réponse D ?</p>
+                    </label>
+                  </div>
+                  <br><br><br><br><br>
+                </section>
+              </div>
+
+            </center>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="player_control.js"></script>
+
+</html>

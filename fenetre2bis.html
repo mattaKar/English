@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="roundslider.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Fast Forward English </title>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="roundslider.min.js"></script>
+  </head>
+
+  <body>
+
+    <div id='cssmenu'>
+      <ul>
+         <li><a href='index.html'><img src="images_jeu/logo.png" style="width:95%; margin-right: -350px;"></a></li>
+         <li><a class="onglet" href='fenetre3bis.html'>Test</a></li>
+         <li><a class="onglet" href='fenetre5bis.html'>Playlist</a></li>
+         <li><a class="onglet" href='fenetre6bis.html'>About us</a></li>
+      </ul>
+    </div>
+
+    <div id="wrapper" show=true>
+
+      <main class="fenetre">
+        <div id="content">
+          <div class="innertube">
+              <div style="width: 75%; float:left" align="left">
+                <h2> <img src="images_jeu/ff.png" style="width="22" height="22""> Check out your results !</h2>
+              </div>
+              <div style="width: 25%; float:left; margin-top:10px;" align="middle" >
+              </div>
+              <center>
+                <div style="width: 100%; float:left; margin-bottom:65px;" align="middle">
+                  <p style="font-weight:900; font-size:25px; margin-left: 5px;"> Overall </p>
+                  <div id="scoreSlider" class="rslider" z-index:"1"></div>
+                  <br>
+                </div>
+                <br>
+                <div style="margin-bottom: 50px;">
+                  <div id="score1" style="width: 33%; float:left;" align="middle">
+                    <p id="competence1" style="margin-left: 18px;"> Understanding </p>
+                    <div id="scoreSlider1" class="rslider" z-index:"1"></div>
+                  </div>
+                  <div id="score2" style="width: 33%; float:left;" align="middle">
+                    <p id="competence2" style="margin-left: 15px;"> Inference Questions </p>
+                    <div id="scoreSlider2" class="rslider" z-index:"1"></div>
+                  </div>
+                  <div id="score3" style="width: 33%; float:left;" align="middle">
+                    <p id="competence3" style="margin-left: 15px;"> Vocabulary </p>
+                    <div id="scoreSlider3" class="rslider" z-index:"1"></div>
+                  </div>
+                </div>
+              </center>
+              <br>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="score.js"></script>
+
+</html>
